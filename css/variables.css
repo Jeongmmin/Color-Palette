@@ -1,6 +1,7 @@
 :root {
-  --large-size: 3rem;
-  --medium-size : 1rem;
+  --large-size: 3.2rem;
+  --medium-size : 1.2rem;
+  --small-size : 1rem;
 
   --color-item-width:10vw;
 

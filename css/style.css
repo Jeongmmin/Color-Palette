@@ -26,7 +26,7 @@
 }
 
 nav {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -83,7 +83,7 @@ nav {
   color: var(--white);
   background-color: black;
   padding: var(--padding);
-  font-size: var(--medium-size);
+  font-size: var(--small-size);
   transition: all 0.2s ease-in-out;
 }
 
