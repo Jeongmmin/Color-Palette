@@ -15,10 +15,11 @@ export default function copyToClipBoard(event) {
 }
 
 function handleCopied(e) {
+  const message = 'COPIED!'
   if(copied) {
-    copyAlert(e, 'copied');
+    copyAlert(e, message);
   }else {
-    afterCopied(e, copyAlert(e, 'copied'));
+    afterCopied(e, copyAlert(e, message));
   }
 }
 
@@ -34,5 +35,5 @@ function afterCopied(e, newMessage) {
   setTimeout(() => {
     e.target.classList.remove('copied');
     e.target.innerHTML = newMessage;
-  }, 1000);
+  }, 800);
 }

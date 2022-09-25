@@ -5,36 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Palette</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script type="module" src="./src/main.js"></script>
   </head>
   <body>
     <section class="contentBox">
       <nav>
         <span class="title">20 Beautiful Color Palettes</span>
+        <div class="contentBox__buttons">
+          <button class="generateBtn btn">Generate</button>
+          <button class="gradientBtn btn">Gradient</button>
+        </div>
       </nav>
 
       <div class="contentBox__colors">
         <div class="colors__colorItem">
-          <p class="colorItem__colorCode none" id="textArea">#95BCCC</p>
+          <span class="colorItem__colorCode none">#95BCCC</span>
         </div>
         <div class="colors__colorItem">
-          <p class="colorItem__colorCode none">#FCDCDC</p>
+          <span class="colorItem__colorCode none">#FCDCDC</span>
         </div>
         <div class="colors__colorItem">
-          <p class="colorItem__colorCode none">#2B4C59</p>
+          <span class="colorItem__colorCode none">#2B4C59</span>
         </div>
         <div class="colors__colorItem">
-          <p class="colorItem__colorCode none">#988080</p>
+          <span class="colorItem__colorCode none">#988080</span>
         </div>
         <div class="colors__colorItem">
-          <p class="colorItem__colorCode none">#BECEDA</p>
+          <span class="colorItem__colorCode none">#BECEDA</span>
         </div>
       </div>
 
-      <div class="contentBox__buttons">
-        <button class="generateBtn">Generate</button>
+      <div class="contentBox__mixColors none">
+        <div class="mixColors__mixedItem">
+          <span class="mixedItem__copyMessage none">COPY</span>
+        </div>
+        <div class="mixColors__mixedItem">
+          <span class="mixedItem__copyMessage none">COPY</span>
+        </div>
+        <div class="mixColors__mixedItem">
+          <span class="mixedItem__copyMessage none">COPY</span>
+        </div>
+        <div class="mixColors__mixedItem">
+          <span class="mixedItem__copyMessage none">COPY</span>
+        </div>
+        <div class="mixColors__mixedItem">
+          <span class="mixedItem__copyMessage none">COPY</span>
+        </div>
       </div>
+
+      
     </section>
   </body>
 </html>

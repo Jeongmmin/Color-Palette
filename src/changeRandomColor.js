@@ -1,11 +1,12 @@
 import colors from './colorData.js';
+import makeGradient from './makeGradient.js';
 
-const colorItem = document.querySelectorAll('.colors__colorItem');
 const generateBtn = document.querySelector('.generateBtn');
 
 export default function handleChangeColor() {
   const randomColors = makeRandom(colors);
   displayColor(randomColors);
+  makeGradient(randomColors);
 }
 
 function makeRandom(array) {
@@ -13,12 +14,12 @@ function makeRandom(array) {
 }
 
 function displayColor(randomItems) {
+  const colorItem = document.querySelectorAll('.colors__colorItem');
   const colorCode = document.querySelectorAll('.colorItem__colorCode');
-  for (let i = 0; i < colorItem.length; i++) {
+  for (let i = 0; i < randomItems.length; i++) {
     colorItem[i].style.backgroundColor = randomItems[i];
     colorCode[i].innerHTML = randomItems[i];
   }
 }
-
 
 generateBtn.addEventListener('click', handleChangeColor);
