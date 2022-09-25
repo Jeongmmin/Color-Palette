@@ -1,0 +1,22 @@
+:root {
+  --large-size: 3rem;
+  --medium-size : 1rem;
+
+  --color-item-width:10vw;
+
+  --scale: 1.1;
+
+  --padding: 0.5rem;
+  --padding-large: 1rem;
+
+  --border-radius-large: 8vw;
+  --border-radius-medium: 20px;
+  --border-radius-small: 8px;
+
+  --margin: 8px;
+
+  --white: white;
+  --back-black-light:rgba(30, 29, 29, 0.6);
+  --back-black:rgba(30, 29, 29, 1);
+  --btn-color: rgb(207, 206, 206);
+}

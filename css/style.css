@@ -1,0 +1,131 @@
+@import './reset.css';
+@import './variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn {
+  font-size: var(--medium-size);
+  font-weight: 600;
+  padding: var(--padding-large);
+  border-radius: var(--border-radius-small);
+  transition: all 0.3s ease-in-out;
+  margin-left: var(--margin);
+  background-color: var(--btn-color);
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.btn:active {
+  border-radius: var(--border-radius-medium);
+}
+
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: var(--large-size);
+  font-weight: 600;
+}
+
+.contentBox__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: url('https://t1.daumcdn.net/cfile/tistory/991CD6365C6D05C432');
+}
+
+.contentBox__colors {
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.colors__colorItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--color-item-width);
+  background-color: salmon;
+  border-radius: var(--border-radius-large);
+  transition: all 0.3s ease-in-out;
+}
+
+.colors__colorItem:hover {
+  scale: var(--scale);
+}
+
+.colors__colorItem:hover .colorItem__colorCode {
+  display: block;
+  cursor: pointer;
+  scale: var(--scale);
+}
+
+.colorItem__colorCode {
+  color: var(--white);
+  background-color: black;
+  padding: var(--padding);
+  font-size: var(--medium-size);
+  transition: all 0.2s ease-in-out;
+}
+
+.contentBox__mixColors {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.mixColors__mixedItem {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .mixColors__mixedItem:hover .mixedItem__copyMessage {
+  display:block;
+}
+
+.mixedItem__copyMessage:hover {
+  cursor: pointer;
+} */
+
+.none {
+  display: none;
+}
+
+.copied {
+  background-color: var(--back-black-light);
+  padding: var(--padding);
+  border: solid var(--white) 1px;
+  border-radius: var(--border-radius-small);
+  will-change: scale;
+}
+
+.clicked {
+  color: var(--white);
+  background-color: var(--back-black-light);
+  padding: var(--padding-large);
+}
